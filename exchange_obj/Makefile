@@ -1,5 +1,5 @@
-LDFLAGS=-L/home/ubuntu/fuzzing_mnt2/.local/lib -lmupdf -lmupdf-third -lm
-CFLAGS=-I/home/ubuntu/fuzzing_mnt2/.local/include -O0
+LDFLAGS=-L/usr/local/lib -lmupdf -lmupdf-third -lm
+CFLAGS=-I/usr/local/include -O0
 CC=gcc
 
 main: exchange_objs
