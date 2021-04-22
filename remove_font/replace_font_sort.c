@@ -143,24 +143,6 @@ static int isfontdesc(pdf_obj* obj)
 }
 
 
-static pdf_write_options pdf_extract_write_options = {
-    0, /* do_incremental */
-    0, /* do_pretty */
-    0, /* do_ascii */
-    0, /* do_compress */
-    0, /* do_compress_images */
-    0, /* do_compress_fonts */
-    0, /* do_decompress */
-    4, /* do_garbage */
-    0, /* do_linear */
-    0, /* do_clean */
-    0, /* do_sanitize */
-    0, /* do_appearance */
-    0, /* do_encrypt */
-    ~0, /* permissions */
-    "", /* opwd_utf8[128] */
-    "", /* upwd_utf8[128] */
-};
 
 static void iter_fonts(){
   pdf_obj* ref;
@@ -259,6 +241,24 @@ static void replace_font(font_ele* root){
 
 int main(int argc, char** argv)
 {
+pdf_write_options pdf_extract_write_options = {
+    0, /* do_incremental */
+    0, /* do_pretty */
+    0, /* do_ascii */
+    0, /* do_compress */
+    0, /* do_compress_images */
+    0, /* do_compress_fonts */
+    0, /* do_decompress */
+    4, /* do_garbage */
+    0, /* do_linear */
+    0, /* do_clean */
+    0, /* do_sanitize */
+    0, /* do_appearance */
+    0, /* do_encrypt */
+    ~0, /* permissions */
+    "", /* opwd_utf8[128] */
+    "", /* upwd_utf8[128] */
+};
   char* infile = NULL;
   char* outfile = NULL;
 

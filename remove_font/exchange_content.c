@@ -66,7 +66,10 @@ static void exchange_content(){
   }
 }
 
-static pdf_write_options pdf_extract_write_options = {
+
+int main(int argc, char** argv)
+{
+pdf_write_options pdf_extract_write_options = {
     0, /* do_incremental */
     0, /* do_pretty */
     0, /* do_ascii */
@@ -84,9 +87,6 @@ static pdf_write_options pdf_extract_write_options = {
     "", /* opwd_utf8[128] */
     "", /* upwd_utf8[128] */
 };
-
-int main(int argc, char** argv)
-{
   char* infile1 = NULL;
   char* infile2 = NULL;
   char* outfile1 = NULL;

@@ -23,24 +23,6 @@
       _tmp; \
       })
 
-static pdf_write_options pdf_extract_write_options = {
-    0, /* do_incremental */
-    0, /* do_pretty */
-    0, /* do_ascii */
-    0, /* do_compress */
-    0, /* do_compress_images */
-    0, /* do_compress_fonts */
-    0, /* do_decompress */
-    3, /* do_garbage */
-    0, /* do_linear */
-    0, /* do_clean */
-    0, /* do_sanitize */
-    0, /* do_appearance */
-    0, /* do_encrypt */
-    ~0, /* permissions */
-    "", /* opwd_utf8[128] */
-    "", /* upwd_utf8[128] */
-};
 
 struct pdf_obj {
   short refs;
