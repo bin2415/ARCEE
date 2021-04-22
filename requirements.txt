@@ -1,0 +1,4 @@
+beautifulsoup4
+PyMuPDF
+logging
+optparse-pretty
