@@ -24,6 +24,15 @@ cd llvm_mode && make
 popd
 ```
 
+#### Install Convertors
+
+```
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+wget -d https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb
+sudo apt install ./pandoc-2.13-1-amd64.deb
+```
+
 #### build the tool
 
 ```
