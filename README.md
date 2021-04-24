@@ -27,10 +27,12 @@ popd
 #### Install Convertors
 
 ```
+sudo apt update 
+sudo apt install wget xfonts-75dpi
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
-wget -d https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb
-sudo apt install ./pandoc-2.13-1-amd64.deb
+wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
+sudo apt install ./wkhtmltox_0.12.5-1.bionic_amd64.deb
 ```
 
 #### build the tool
