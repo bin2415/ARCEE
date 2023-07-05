@@ -1,4 +1,4 @@
-## Annoymance Repo of ARCEE
+## ARCEE
 
 ### build
 
